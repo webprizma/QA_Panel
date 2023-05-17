@@ -23,7 +23,7 @@ func executeCommand(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Command to list files in the current directory
-	cmd := exec.Command("htop")
+	cmd := exec.Command("ls -la")
 
 	// Output will be stored in this variable
 	output, err := cmd.Output()
